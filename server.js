@@ -12,15 +12,15 @@ app.use(express.json());
 // Loading the HTML pages 
 // =============================================================
 
-app.get("/", function(req, res) {
-res.sendFile(path.join(__dirname, "home.html"));
+app.get("/index.html", function(req, res) {
+res.sendFile(path.join(__dirname, "index.html"));
 });
   
-app.get("/tables", function(req, res) {
+app.get("/tables.html", function(req, res) {
 res.sendFile(path.join(__dirname, "tables.html"));
 });
 
-app.get("/reserve", function(req, res) {
+app.get("/reserve.html", function(req, res) {
 res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
